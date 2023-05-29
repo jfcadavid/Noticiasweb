@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Registro</title>
+    <link rel="shortcut icon"  href="img/nw2.jpg">
+    <link type="text/css" href="estilos/index.css" rel="stylesheet" >    
+  </head>
+ 
+<body>
+    <div class="formulario">
+    <center><h1>Registrarse</h1></center>
+      <form action="usuario.php"method="post">
+       <center><input class="h1" type="text" name="nombre" placeholder="Nombre" required><br><br></center>
+       <center><input class="h2" type="text" name="apellido" placeholder="Apellido"required><br><br></center>
+       <center><input class="h3" type="email" name="email" placeholder="Email" required><br><br></center>
+       <center><input class="h4" type="password" name="contraseña" placeholder="Contraseña" pattern='[a-zA-Z0-9!@#$&%*()\\-.+,\/"]'required><br><br></center>
+       <center><h1>La contraseña debe tener una letra Mayuscula, números y caracteres especiales("!#")</h1><br><br></center>
+       <center><input class="h5" type="submit" name="enviar" ></center>
+      </form> 
+      
+    </div>
+    
+</body>
+
+    </html>

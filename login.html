@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Iniciar Sesión</title>
+    <link rel="shortcut icon"  href="img/minilogo.jpeg">
+    <link rel="stylesheet" href="estilos/login.css" type="text/css" >
+    <script src="functions.js"></script>
+    </head>
+    
+    
+ 
+<body>
+  
+    <div class="formulario">
+    <center><h1>Iniciar Sesión</h1><br></center>
+      <form action="login.php"method="post">
+       <center><input class="h1" type="email" name="email" placeholder="Email" required></center>
+       <center><input class="h2" type="password" id="contraseña" name="contraseña" placeholder="Contraseña" pattern='[a-zA-Z0-9!@#$&%*()\\-.+,\/"]' required></center>
+       <center><input class="h3" type="checkbox" onclick="mostrarContraseña()">Mostrar Contraseña</center>
+       
+        <center> <input class="h4" type="submit" value="Entrar"></center>
+     </form>
+    <center><a href="Index.html">¿No tienes una cuenta? Registrate</a><br></center>
+   
+
+    </div>
+</body>
+</html>

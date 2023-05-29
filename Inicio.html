@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticiasweb</title>
+    <link rel="shortcut icon"  href="img/nw2.jpg">
+    <link type="text/css"  href="estilos/estiloinicio.css" rel="stylesheet">
+    <script>
+        var timeoutID;
+        function resetTimer() {
+			clearTimeout(timeoutID);
+			timeoutID = setTimeout(doInactive, 300000);
+		}
+
+		function doInactive() {
+			location.href="login.html";
+		}
+
+		// Restablece el temporizador cuando se detecta actividad
+		window.onload = resetTimer;
+		window.onmousemove = resetTimer;
+		window.onmousedown = resetTimer;
+		window.ontouchstart = resetTimer;
+		window.onclick = resetTimer;
+		window.onkeypress = resetTimer;
+		window.addEventListener('scroll', resetTimer, true);
+    </script>
+    
+</head>
+<body>
+    <header>
+        <div class="ancho">
+            <div class="logo">
+                <p><a href="#">Noticiasweb</a></p>
+            </div>
+        <nav>
+            <ul>
+                <li><a href="Buscar.html">Buscar</a></li>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Formulario.html">Publicar</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="Index.html">Registrarse</a></li>
+                <li><a href="cerrarsesion.php">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Bienvenido</h2>
+   
+    <div class="Formulario">
+    <form action="blog.php" method="post">
+       <center> <input class="h" type="submit" value="Ver Noticias"></center>
+    </form>
+    </div>
+    
+    
+</body>
+<footer> 
+    <div class="pie">
+        <center><p>Noticiasweb todos los derechos reservados</p></center>
+    </div>
+</footer>
+</html>
